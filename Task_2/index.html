@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Alegreya+Sans:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Family Bakery home">
+        <img class="logo-light" src="images/bakery-logo-light.png" alt="Family Bakery logo">
+        <img class="logo-color" src="images/bakery-logo-color.png" alt="">
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open navigation">
+      <label class="nav-button" for="nav-toggle" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#offer">Our Offer</a>
+        <a href="#gallery">Gallery</a>
+        <div class="nav-item">
+          <a href="#blog">Blog</a>
+          <div class="dropdown">
+            <a href="#blog">Blog Index</a>
+            <a href="#blog">Simple Post</a>
+            <a href="#blog">Gallery Post</a>
+            <a href="#blog">Basic Post</a>
+          </div>
+        </div>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">Welcome to</p>
+        <h1>Family Bakery</h1>
+        <p class="hero-copy">Fresh bread, warm pastries, and a neighborhood bakery experience made for every morning.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">Learn More</a>
+          <a class="btn btn-outline" href="#contact">Contact us</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div class="container split-grid">
+        <div class="photo-panel">
+          <img src="images/baker-table.jpg" alt="Fresh bread cooling on a bakery table">
+        </div>
+        <div class="copy-panel">
+          <h2>Who we are?</h2>
+          <p>For more than 30 years, our ovens have served families, cafes, and weekend tables with bread baked slowly and handled by people who care about the details.</p>
+          <p>We blend traditional methods with modern kitchen standards, keeping every loaf consistent, simple, and full of character.</p>
+          <ul class="feature-list">
+            <li><span class="icon icon-leaf" aria-hidden="true"></span>We care about the environment.</li>
+            <li><span class="icon icon-users" aria-hidden="true"></span>Trusted by hundreds of local clients.</li>
+            <li><span class="icon icon-heart" aria-hidden="true"></span>People keep sharing their favorites.</li>
+            <li><span class="icon icon-check" aria-hidden="true"></span>Fresh batches are prepared every day.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section muted" id="gallery">
+      <div class="container split-grid reverse">
+        <div class="copy-panel">
+          <h2>Our Location</h2>
+          <p>Our bakery is placed close to the heart of the city, where the morning light reaches the counters before the first trays leave the oven.</p>
+          <p>Stop by for a quiet coffee, collect a box for the office, or take home a warm loaf that makes dinner feel finished before it starts.</p>
+        </div>
+        <div class="photo-panel">
+          <img src="images/bakery-location.jpg" alt="Assorted pastries displayed at the bakery">
+        </div>
+      </div>
+    </section>
+
+    <section class="section baking" id="offer">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Our Baking</h2>
+          <p>Every tray is shaped around simple ingredients, careful timing, and the comfort of food made close to home.</p>
+        </div>
+        <div class="baking-grid">
+          <article class="baking-item">
+            <img src="images/bread.jpg" alt="Golden loaves of superior bread">
+            <h3>Superior Breads</h3>
+            <p>Crusty, soft-centered loaves with slow fermentation and a clean finish for daily tables.</p>
+          </article>
+          <article class="baking-item">
+            <img src="images/bagels.jpg" alt="Fresh bagels on a bakery tray">
+            <h3>Bagels</h3>
+            <p>Chewy rings with a deep bake, ready for cream cheese, smoked fillings, or a quick breakfast.</p>
+          </article>
+          <article class="baking-item">
+            <img src="images/cookies.jpg" alt="Fresh bakery cookies">
+            <h3>Cookies</h3>
+            <p>Small-batch cookies with tender centers, crisp edges, and flavors that change with the season.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container split-grid contact-grid">
+        <div class="copy-panel">
+          <h2>Contact Information</h2>
+          <p>Questions, custom boxes, and early morning orders are welcome. Reach out and we will help you choose the right bake for the occasion.</p>
+          <p class="details-label">Our contact details:</p>
+          <ul class="contact-list">
+            <li><span class="icon icon-pin" aria-hidden="true"></span>Manchester St 123-78B, Random 713, UK</li>
+            <li><span class="icon icon-phone" aria-hidden="true"></span>+46 123 456 789</li>
+            <li><span class="icon icon-support" aria-hidden="true"></span>+37 431 456 789</li>
+            <li><span class="icon icon-mail" aria-hidden="true"></span>hello@sitename.com</li>
+          </ul>
+        </div>
+        <div class="map-panel" role="img" aria-label="Stylized map showing the bakery location">
+          <span class="map-road road-one"></span>
+          <span class="map-road road-two"></span>
+          <span class="map-road road-three"></span>
+          <span class="map-road road-four"></span>
+          <span class="map-block block-one"></span>
+          <span class="map-block block-two"></span>
+          <span class="map-block block-three"></span>
+          <span class="map-pin" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <section>
+          <h3>About us</h3>
+          <p>We are a small bakery team focused on clean ingredients, friendly service, and bread that feels worth crossing town for.</p>
+          <p>Our counters are stocked daily with classic loaves, pastries, cookies, and simple treats.</p>
+        </section>
+        <section>
+          <h3>Why we are special?</h3>
+          <ul class="footer-list">
+            <li>Our signature family recipe.</li>
+            <li>We care about the environment.</li>
+            <li>Trusted by hundreds of clients.</li>
+            <li>Social media loves us.</li>
+            <li>Fresh choices every morning.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Opening Hours</h3>
+          <ul class="footer-list">
+            <li>Monday 10AM - 9PM</li>
+            <li>Tuesday 10AM - 9PM</li>
+            <li>Wednesday 10AM - 9PM</li>
+            <li>Thursday 10AM - 10PM</li>
+            <li>Friday 10AM - 10PM</li>
+            <li>Weekends 10AM - 11PM</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Contact Details</h3>
+          <ul class="footer-contact">
+            <li><span class="footer-icon icon-pin" aria-hidden="true"></span> Manchester Road 123-78B, Silictown 7854MD, Great Country</li>
+            <li><span class="footer-icon icon-phone" aria-hidden="true"></span> +46 123 456 789</li>
+            <li><span class="footer-icon icon-mail" aria-hidden="true"></span> hello@sitename.com</li>
+            <li><span class="footer-icon icon-globe" aria-hidden="true"></span> www.sitename.com</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <img src="images/bakery-logo-light.png" alt="Family Bakery logo">
+      <p>Copyright 2017. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+        <a href="#" aria-label="Google"><span aria-hidden="true">G</span></a>
+        <a href="#" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+        <a href="#" aria-label="Twitter"><span aria-hidden="true">t</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-tools" aria-hidden="true">
+    <button type="button" data-tooltip="Settings"><span class="tool-icon tool-settings" aria-hidden="true"></span></button>
+    <button type="button" data-tooltip="Cart"><span class="tool-icon tool-cart" aria-hidden="true"></span></button>
+  </div>
+</body>
+</html>
